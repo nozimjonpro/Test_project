@@ -11,8 +11,8 @@ export default function Home() {
     <main className="">
       <Header />
       <Hero />
-      {sectionsData.map((el) => (
-        <Universal {...el} />
+      {sectionsData.map((el, i) => (
+        <Universal key={i} {...el} />
       ))}
       <Mobil />
       {/* <Problem />
