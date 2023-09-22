@@ -2,21 +2,18 @@
 
 import React, { useState } from "react";
 
-type MainButtonProps = {
-  title: string;
-  styles?: React.CSSProperties;
-};
-
 export const MainButton = (props: MainButtonProps) => {
   const [isHover, setIsHover] = useState(false);
 
   return (
-    <div className="relative w-max overflow-hidden rounded-hundred border-2 border-black">
+    <div
+      className="relative overflow-hidden rounded-hundred w-full h-full flex justify-center items-center"
+      style={{ boxShadow: "0 0 0 2px #000" }}
+    >
       <button
-        className={`w-max p-5 text-3xl text-center rounded-hundred transition-colors duration-300 ${
-          isHover ? "text-white" : ""
-        }`}
-        style={props.styles}
+        className={`main__btn w-full h-full text-center rounded-hundred transition-colors duration-300 ${
+          props.styleClass
+        } ${isHover ? `main__btn--${props.variant} text-white` : ""}`}
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
       >

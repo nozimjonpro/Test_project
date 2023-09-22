@@ -3,7 +3,7 @@
 import React from "react";
 import { SocialMedia } from "@/Components/SocialMedia/SocialMedia";
 import { motion } from "framer-motion";
-import { fadeFromBottom, fadeFromBottomGroup } from "@/Utils/motion";
+import { fadeFromBottomGroup } from "@/Utils/motion";
 import { images } from "@/Assets/Data/MockData";
 import { PhoneLayer } from "@/Assets/Images";
 import Image, { StaticImageData } from "next/image";

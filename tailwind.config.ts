@@ -17,6 +17,7 @@ const config: Config = {
       colors: {
         bgBrend: "#00AEDA",
         sonia: "#00B6E4",
+        ligtSilver: "#9F9FAB"
       },
       screens: {
         xs: "480px",

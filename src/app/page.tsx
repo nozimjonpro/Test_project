@@ -15,8 +15,8 @@ export default function Home() {
         <Universal key={i} {...el} />
       ))}
       <Mobil />
-      {/* <Problem />
-      <Footer /> */}
+      {/* <Problem /> */}
+      <Footer />
     </main>
   );
 }

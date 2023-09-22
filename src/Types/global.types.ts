@@ -30,3 +30,17 @@ type ImageType = {
   styles: React.CSSProperties;
   variants?: {};
 };
+
+type MainButtonProps = {
+  id?: number;
+  title: string;
+  styles?: React.CSSProperties;
+  variant?: string;
+  styleClass: string;
+};
+
+type SocialMediaDataType = {
+  id: number;
+  icon: object;
+  name: string;
+};
