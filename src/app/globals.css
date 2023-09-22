@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "HelveticaneueCyr";
+  font-weight: 400;
+  src: url("../Assets/Fonts/HelveticaNeueCyr-Roman.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaneueCyr";
+  font-weight: 500;
+  src: url("../Assets/Fonts/HelveticaNeueCyr-Medium.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaneueCyr";
+  font-weight: 700;
+  src: url("../Assets/Fonts/HelveticaNeueCyr-Bold.ttf");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "HelveticaneueCyr", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+img {
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+main {
+  flex-grow: 1;
+}

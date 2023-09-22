@@ -1,0 +1,32 @@
+type NavbarProps = {
+  isClicked: boolean;
+  setIsClicked: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+type SimpleData = {
+  id: number;
+  title: string;
+};
+
+type Styles = {
+  [key: string]: React.CSSProperties;
+};
+
+type UniversalProps = {
+  id: number;
+  type: string;
+  icon: object;
+  image: object;
+  heading: string;
+  text: string;
+  sectionBg: React.CSSProperties;
+  styles?: Styles;
+  nav: SimpleData[] | null;
+};
+
+type ImageType = {
+  id: number;
+  image: object;
+  styles: React.CSSProperties;
+  variants?: {};
+};
