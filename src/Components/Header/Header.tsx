@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Navbar } from "../Navbar/Navbar";
 import { Logo } from "@/Assets/Images";
 import Image from "next/image";
@@ -9,6 +9,14 @@ import { motion } from "framer-motion";
 
 export default function Header() {
   const [isClicked, setIsClicked] = useState(false);
+
+  useEffect(() => {
+    if (isClicked) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "scroll";
+    }
+  }, [isClicked]);
   return (
     <header
       className={`header__fixed ${isClicked ? "header__fixed--active" : ""}`}
@@ -27,7 +35,7 @@ export default function Header() {
         }}
       >
         <div
-          className="w-11 h-11 rounded-full bg-bgSilver md:hidden flex justify-center items-center z-10"
+          className="w-11 h-11 rounded-full bg-bgSilver md:hidden flex justify-center items-center z-30"
           onClick={() => setIsClicked(!isClicked)}
         >
           <div

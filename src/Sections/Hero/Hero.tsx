@@ -9,7 +9,7 @@ import { fadeFromBottom } from "@/Utils/motion";
 
 export const Hero = () => {
   return (
-    <section className="hero md:pt-40 pt-32 pb-40">
+    <section className="hero md:pt-40 pt-32 pb-40" id="hero">
       <div className="max-w-screen-lg+ w-full mx-auto md:px-4 px-2">
         <motion.div
           className="flex flex-col items-center gap-y-4 font-medium sm:mb-6 mb-4"
@@ -32,7 +32,7 @@ export const Hero = () => {
         </motion.div>
         <div className="flex flex-col md:gap-y-5 sm:gap-y-4 gap-y-2.5 items-center text-center">
           <motion.h1
-            className="hero__heading font-bold text-2xl sm:text-4xl lg:text-6xl"
+            className="hero__heading font-bold text-3xl sm:text-4xl lg:text-6xl"
             variants={fadeFromBottom(0.3, 0.5, 50)}
             initial="hidden"
             animate="visible"

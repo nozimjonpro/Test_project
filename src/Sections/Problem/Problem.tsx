@@ -10,7 +10,7 @@ import Image, { StaticImageData } from "next/image";
 
 export const Problem = () => {
   return (
-    <section className="bg-blueBg md:pt-20 pt-16">
+    <section className="bg-blueBg md:pt-20 pt-16" id="problem">
       <motion.div
         className="max-w-screen-lg+ w-full mx-auto md:px-4 px-2 flex flex-col items-center"
         variants={fadeFromBottomGroup(0.5, 100)}
@@ -38,14 +38,14 @@ export const Problem = () => {
           yuklab oling
         </motion.p>
         <SocialMedia />
-        <ul className="flex relative h-96 w-full mt-24">
+        <ul className="flex relative md:h-[450px] sm:h-72 h-44 w-full mt-24">
           {images.map((el) => (
             <motion.li
-              className="absolute top-0 shrink-0 md:max-w-[389px] max-w-[274px] w-full"
+              className={`absolute top-0 shrink-0 md:max-w-[389px] sm:max-w-[274px] max-w-[200px] w-full ${el.tailwind}`}
               key={el.id}
               style={el.styles}
             >
-              <div className="relative md:mt-12 mt-7  md:max-w-[389px] max-w-[274px] w-full mx-auto">
+              <div className="relative md:mt-12 mt-7 md:max-w-[389px] sm:max-w-[274px] max-w-[200px] w-full mx-auto">
                 <Image
                   className="w-full h-auto"
                   src={PhoneLayer}
@@ -56,7 +56,7 @@ export const Problem = () => {
                   priority
                 />
                 <Image
-                  className="md:max-w-[305px] max-w-[215px] w-full absolute top-[calc(3%)] left-[calc(10%+3px)]"
+                  className="md:max-w-[305px] sm:max-w-[215px] max-w-[156px] w-full absolute top-[calc(3%)] sm:left-[calc(10%+3px)] left-[calc(10%+2px)]"
                   src={el.image as StaticImageData}
                   alt="Phone layer"
                   width={305}

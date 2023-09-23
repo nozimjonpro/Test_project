@@ -88,35 +88,38 @@ export const images: ImageType[] = [
     id: 1,
     image: img.HomeScreen,
     styles: {
-      zIndex: 10,
+      zIndex: 9,
       left: "50%",
       transform: "translateX(-50%) translateY(-100px)",
     },
     variants: { hidden: {}, visible: {} },
+    tailwind: "",
   },
   {
     id: 2,
     image: img.Restaurant,
-    styles: { zIndex: 9, right: "50%", transform: "translateY(-50px)" },
+    styles: { zIndex: 8, right: "50%", transform: "translateY(-50px)" },
     variants: { hidden: {}, visible: {} },
   },
   {
     id: 3,
     image: img.Famous,
-    styles: { zIndex: 8, left: "50%", transform: "translateY(-50px)" },
+    styles: { zIndex: 7, left: "50%", transform: "translateY(-50px)" },
     variants: { hidden: {}, visible: {} },
   },
   {
     id: 4,
     image: img.Medicine,
-    styles: { zIndex: 7, right: "65%" },
+    styles: { zIndex: 6, right: "65%" },
     variants: { hidden: {}, visible: {} },
+    tailwind: "sm:block hidden",
   },
   {
     id: 5,
     image: img.Auto,
-    styles: { zIndex: 6, left: "65%" },
+    styles: { zIndex: 5, left: "65%" },
     variants: { hidden: {}, visible: {} },
+    tailwind: "sm:block hidden",
   },
 ];
 

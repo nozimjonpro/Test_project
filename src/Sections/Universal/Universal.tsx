@@ -10,8 +10,9 @@ import { SocialMedia } from "@/Components/SocialMedia/SocialMedia";
 export const Universal = (props: UniversalProps) => {
   return (
     <section
-      className="relative lg+:py-40 md:py-32 pb-32 sm:pt-24 xs:pt-16 py-12"
+      className="page__section relative lg+:py-40 md:py-32 pb-32 sm:pt-24 xs:pt-16 py-12"
       style={props.sectionBg}
+      id={props.type}
     >
       {props.type === "famous" ? (
         <video
@@ -27,7 +28,7 @@ export const Universal = (props: UniversalProps) => {
         ""
       )}
       <div
-        className={`max-w-screen-lg+ w-full mx-auto md:px-4 lg:pb-20 px-2 flex items-center flex-col-reverse gap-y-10 lg:gap-x-3 lg:justify-between z-10 ${
+        className={`max-w-screen-lg+ w-full mx-auto md:px-4 lg:pb-20 px-2 flex items-center flex-col-reverse gap-y-3 lg:gap-x-3 lg:justify-between z-10 ${
           props.type === "restaurant" || props.type === "medicine"
             ? "lg:flex-row"
             : "lg:flex-row-reverse"

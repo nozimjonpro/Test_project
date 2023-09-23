@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { navbarData } from "@/Assets/Data/MockData";
 import Link from "next/link";
 
@@ -21,12 +21,14 @@ export const Navbar = ({ isClicked, setIsClicked }: NavbarProps) => {
         {navbarData.map((el) => (
           <li className={`${isClicked ? "w-full text-start" : ""}`} key={el.id}>
             <Link
-              className={`lg+:px-4 lg+:py-3.5 py-2 rounded-hundred hover:bg-bgSilver active:bg-bgBrend transition-colors duration-300 ${
+              className={`nav__link lg+:px-4 lg+:py-3.5 py-2 rounded-hundred hover:bg-bgSilver active:bg-bgBrend transition-colors duration-300 ${
                 isClicked
                   ? "text-3xl font-bold px-0 pl-4 w-full block"
                   : "px-3 text-lg"
               }`}
               href={el.path}
+              id={el.path}
+              onClick={() => setIsClicked(false)}
             >
               {el.title}
             </Link>

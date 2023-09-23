@@ -96,7 +96,6 @@ section {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #00aeda;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   z-index: -1;
@@ -109,6 +108,32 @@ section {
 
 .main__btn--black::before {
   background-color: #0e0f2c;
+}
+
+.main__btn--blue::before {
+  background-color: #00aeda;
+}
+
+.main__btn--black:hover .social__svg {
+  filter: invert(1);
+}
+
+.black__svg {
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.black__svg:hover {
+  filter: invert(0);
+  opacity: 1;
+  scale: 1.1;
+}
+
+@media only screen and (max-width: 768px) {
+  .black__svg:hover {
+    scale: 1;
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 768px) {

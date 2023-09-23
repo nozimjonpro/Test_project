@@ -13,7 +13,7 @@ export default function SelectLang() {
   const [lang, setLang] = useState(langData[0]);
 
   return (
-    <div className="relative">
+    <div className="relative z-20">
       <div
         className={`py-2.5 px-2.5 md:px-4 rounded-hundred lg:hover:bg-bgSilver transition-colors duration-300 flex gap-x-2 items-center cursor-pointer w-max md:w-40 unselectable ${
           isClicked ? "bg-bgSilver" : "md:bg-white bg-bgSilver"

@@ -15,7 +15,7 @@ export const SocialMedia = () => {
     >
       <li>
         <Image
-          className="cursor-pointer unselectable w-full h-auto"
+          className="black__svg cursor-pointer unselectable w-full h-auto"
           src={PlayStore}
           alt="Play store"
           width={182}
@@ -25,7 +25,7 @@ export const SocialMedia = () => {
       </li>
       <li>
         <Image
-          className="cursor-pointer unselectable w-full h-auto"
+          className="black__svg cursor-pointer unselectable w-full h-auto"
           src={AppStore}
           alt="Play store"
           width={182}

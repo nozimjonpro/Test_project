@@ -29,6 +29,7 @@ type ImageType = {
   image: object;
   styles: React.CSSProperties;
   variants?: {};
+  tailwind?: string;
 };
 
 type MainButtonProps = {
