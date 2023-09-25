@@ -4,7 +4,7 @@ export const navbarData = [
   { id: 1, title: "Restoran", path: "#restaurant" },
   { id: 2, title: "Mashhurlar", path: "#famous" },
   { id: 3, title: "Meditsina", path: "#medicine" },
-  { id: 4, title: "Avto", path: "#auto" },
+  // { id: 4, title: "Avto", path: "#auto" },
   { id: 5, title: "Aloqa", path: "#contact" },
 ];
 
@@ -63,24 +63,24 @@ export const sectionsData: UniversalProps[] = [
     ],
   },
 
-  {
-    id: 4,
-    type: "auto",
-    image: img.Auto,
-    icon: img.AutoIcon,
-    heading: "1SONiA Avto",
-    text: "Mobil ilova orqali avtoservis va mashina ustalari qabuliga joy band qiling. Avto bo’limida 2 ta bo’lim mavjud:",
-    sectionBg: {},
-    styles: {
-      container: {
-        flexDirection: "row-reverse",
-      },
-    },
-    nav: [
-      { id: 1, title: "ustalar" },
-      { id: 2, title: "avtoservislar" },
-    ],
-  },
+  // {
+  //   id: 4,
+  //   type: "auto",
+  //   image: img.Auto,
+  //   icon: img.AutoIcon,
+  //   heading: "1SONiA Avto",
+  //   text: "Mobil ilova orqali avtoservis va mashina ustalari qabuliga joy band qiling. Avto bo’limida 2 ta bo’lim mavjud:",
+  //   sectionBg: {},
+  //   styles: {
+  //     container: {
+  //       flexDirection: "row-reverse",
+  //     },
+  //   },
+  //   nav: [
+  //     { id: 1, title: "ustalar" },
+  //     { id: 2, title: "avtoservislar" },
+  //   ],
+  // },
 ];
 
 export const images: ImageType[] = [

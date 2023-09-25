@@ -119,13 +119,11 @@ section {
 }
 
 .black__svg {
-  opacity: 0.9;
   transition: 0.3s;
 }
 
 .black__svg:hover {
   filter: invert(0);
-  opacity: 1;
   scale: 1.1;
 }
 
