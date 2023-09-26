@@ -34,9 +34,9 @@ export const Mobil = () => {
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{
-            scale: 1.2,
+            scale: 1.1,
           }}
-          whileTap={{ scale: 0.8 }}
+          whileTap={{ scale: 0.9 }}
         >
           <Image
             className="md:mb-10 sm:mb-8 xs:m-6 mb-4 md:w-full md:h-auto sm:w-20 sm:h-20 xs:w-16 xs:h-16 w-14 h-14 max-w-[100px] aspect-square"
@@ -45,6 +45,7 @@ export const Mobil = () => {
             width={100}
             height={100}
             priority
+            draggable={false}
           />
         </motion.a>
         <p className="text-white md:text-5xl sm:text-4xl xs:text-2xl text-xl md:tracking-wider max-w-md w-full  text-center">

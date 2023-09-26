@@ -3,6 +3,23 @@ import { navbarData } from "@/Assets/Data/MockData";
 import Link from "next/link";
 
 export const Navbar = ({ isClicked, setIsClicked }: NavbarProps) => {
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const anchor = document.querySelectorAll(".nav__link");
+
+    anchor.forEach((el) => el.id.includes("famous"));
+
+    const handleScroll = () => {
+      const fromTop = window.scrollY;
+      sections.forEach((el) => {
+        if (el.offsetTop + 1 <= fromTop) {
+        }
+      });
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <nav
       className={`transition-all duration-500  ${

@@ -35,13 +35,17 @@ export const Footer = () => {
                 className="relative w-12 h-12 rounded-full bg-bgSilver flex justify-center items-center overflow-y-hidden"
                 key={el.id}
               >
-                <div className="w-full h-full main__btn main__btn--black flex justify-center items-center z-[9] transition-colors duration-500 cursor-pointer">
+                <a
+                  className="w-full h-full main__btn main__btn--black flex justify-center items-center z-[9] transition-colors duration-500 cursor-pointer"
+                  href={el.href}
+                  target="_blank"
+                >
                   <Image
                     className="social__svg object-contain fill-white"
                     src={el.icon as StaticImageData}
                     alt="Just an icon"
                   />
-                </div>
+                </a>
               </li>
             ))}
           </ul>

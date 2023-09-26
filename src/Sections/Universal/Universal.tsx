@@ -58,8 +58,8 @@ export const Universal = (props: UniversalProps) => {
               width={305}
               height={659}
               draggable={false}
-              priority
               quality={100}
+              priority
             />
           </motion.div>
         </div>

@@ -14,24 +14,34 @@ export const SocialMedia = () => {
       viewport={{ once: true }}
     >
       <li>
-        <Image
-          className="black__svg cursor-pointer unselectable w-full h-auto"
-          src={PlayStore}
-          alt="Play store"
-          width={182}
-          height={58}
-          draggable={false}
-        />
+        <a
+          href="https://play.google.com/store/apps/details?id=uz.sonia1.soniaapp"
+          target="_blank"
+        >
+          <Image
+            className="black__svg cursor-pointer unselectable w-full h-auto"
+            src={PlayStore}
+            alt="Play store"
+            width={182}
+            height={58}
+            draggable={false}
+          />
+        </a>
       </li>
       <li>
-        <Image
-          className="black__svg cursor-pointer unselectable w-full h-auto"
-          src={AppStore}
-          alt="Play store"
-          width={182}
-          height={58}
-          draggable={false}
-        />
+        <a
+          href="https://apps.apple.com/uz/app/1sonia/id6444478902"
+          target="_blank"
+        >
+          <Image
+            className="black__svg cursor-pointer unselectable w-full h-auto"
+            src={AppStore}
+            alt="Play store"
+            width={182}
+            height={58}
+            draggable={false}
+          />
+        </a>
       </li>
     </motion.ul>
   );

@@ -10,15 +10,17 @@ export const MainButton = (props: MainButtonProps) => {
       className="relative overflow-hidden rounded-hundred w-full h-full flex justify-center items-center"
       style={{ boxShadow: "0 0 0 2px #000" }}
     >
-      <button
+      <a
         className={`main__btn w-full h-full text-center rounded-hundred transition-colors duration-300 ${
           props.styleClass
         } ${isHover ? `main__btn--${props.variant} text-white` : ""}`}
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
+        href={props.tel ? `tel:${props.tel}` : props.href}
+        target={props.tel ? "" : "_blank"}
       >
         {props.title}
-      </button>
+      </a>
     </div>
   );
 };

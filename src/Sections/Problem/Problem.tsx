@@ -8,6 +8,21 @@ import { images } from "@/Assets/Data/MockData";
 import { PhoneLayer } from "@/Assets/Images";
 import Image, { StaticImageData } from "next/image";
 
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1 },
+};
+
 export const Problem = () => {
   return (
     <section className="bg-blueBg md:pt-20 pt-16" id="problem">
@@ -38,12 +53,18 @@ export const Problem = () => {
           yuklab oling
         </motion.p>
         <SocialMedia />
-        <ul className="flex relative md:h-[450px] sm:h-72 h-44 w-full mt-24">
+        <motion.ul
+          className="flex relative md:h-[450px] sm:h-72 h-44 w-full mt-24"
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+        >
           {images.map((el) => (
             <motion.li
               className={`absolute top-0 shrink-0 md:max-w-[389px] sm:max-w-[274px] max-w-[200px] w-full ${el.tailwind}`}
               key={el.id}
               style={el.styles}
+              variants={item}
             >
               <div className="relative md:mt-12 mt-7 md:max-w-[389px] sm:max-w-[274px] max-w-[200px] w-full mx-auto">
                 <Image
@@ -66,7 +87,7 @@ export const Problem = () => {
               </div>
             </motion.li>
           ))}
-        </ul>
+        </motion.ul>
       </motion.div>
     </section>
   );

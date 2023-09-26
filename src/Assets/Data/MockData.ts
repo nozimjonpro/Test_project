@@ -127,6 +127,8 @@ export const footerBtns: MainButtonProps[] = [
   {
     id: 1,
     title: "+998 55 510 60 00",
+    href: "+998 55 510 60 00",
+    tel: true,
     variant: "black",
     styleClass:
       "lg+:text-3xl lg:text-2xl md:text-xl sm:text-xl xs:text-lg py-4 sm:p-4",
@@ -135,6 +137,7 @@ export const footerBtns: MainButtonProps[] = [
     id: 2,
     title: "info@1sonia.uz",
     variant: "black",
+    href: "#",
     styleClass:
       "lg+:text-3xl lg:text-2xl md:text-xl sm:text-xl xs:text-lg py-4 sm:p-4",
   },
@@ -142,15 +145,41 @@ export const footerBtns: MainButtonProps[] = [
     id: 3,
     title: "Toshkent, Chilonzor tumani, kichik xalqa ko’chasi, 16",
     variant: "black",
+    href: "#",
     styleClass:
       "balance__text lg:text-xl md+:text-lg md:text-sm sm:text-lg px-1 py-1",
   },
 ];
 
 export const socialData: SocialMediaDataType[] = [
-  { id: 1, icon: img.Facebook, name: "facebook" },
-  { id: 2, icon: img.YouTube, name: "youtube" },
-  { id: 3, icon: img.Instagram, name: "instagram" },
-  { id: 4, icon: img.Linkedin, name: "linkedin" },
-  { id: 5, icon: img.Telegram, name: "telegram" },
+  {
+    id: 1,
+    icon: img.Facebook,
+    name: "facebook",
+    href: "https://www.facebook.com/1soniauz",
+  },
+  {
+    id: 2,
+    icon: img.YouTube,
+    name: "youtube",
+    href: "https://www.youtube.com/@1sonia_uz",
+  },
+  {
+    id: 3,
+    icon: img.Instagram,
+    name: "instagram",
+    href: "https://www.instagram.com/1sonia_uz/",
+  },
+  {
+    id: 4,
+    icon: img.Linkedin,
+    name: "linkedin",
+    href: "https://www.linkedin.com/company/1sonia/mycompany/",
+  },
+  {
+    id: 5,
+    icon: img.Telegram,
+    name: "telegram",
+    href: "https://t.me/uz_1sonia",
+  },
 ];

@@ -38,10 +38,13 @@ type MainButtonProps = {
   styles?: React.CSSProperties;
   variant?: string;
   styleClass: string;
+  tel?: boolean;
+  href: string;
 };
 
 type SocialMediaDataType = {
   id: number;
   icon: object;
   name: string;
+  href: string;
 };

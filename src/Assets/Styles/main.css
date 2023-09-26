@@ -97,21 +97,23 @@ section {
   bottom: 0;
   left: 0;
   border-top-right-radius: 50%;
+  background: transparent;
   border-top-left-radius: 50%;
   z-index: -1;
   transition: 0.3s;
 }
 
-.main__btn:hover::before {
-  height: 180%;
+.main__btn--blue::before {
+  background-color: #00aeda;
+  z-index: 1;
 }
 
 .main__btn--black::before {
   background-color: #0e0f2c;
 }
 
-.main__btn--blue::before {
-  background-color: #00aeda;
+.main__btn:hover::before {
+  height: 180%;
 }
 
 .main__btn--black:hover .social__svg {
