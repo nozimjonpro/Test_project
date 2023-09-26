@@ -17,7 +17,7 @@ const config: Config = {
       colors: {
         bgBrend: "#00AEDA",
         sonia: "#00B6E4",
-        ligtSilver: "#9F9FAB"
+        ligtSilver: "#9F9FAB",
       },
       screens: {
         xs: "480px",
@@ -38,6 +38,8 @@ const config: Config = {
       },
       borderRadius: {
         hundred: "100px",
+        thirty: "30px",
+        tFour: '24px'
       },
       borderColor: {
         silver: "#F1F1F3",

@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { navbarData } from "@/Assets/Data/MockData";
 import Link from "next/link";
 

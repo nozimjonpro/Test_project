@@ -52,7 +52,7 @@ export const Universal = (props: UniversalProps) => {
               priority
             />
             <Image
-              className="md:max-w-[305px] max-w-[215px] w-full absolute top-[calc(3%)] left-[calc(10%+3px)]"
+              className="md:max-w-[305px] max-w-[215px] w-full absolute top-[calc(3%-1px)] left-[calc(10%+2px)] md:rounded-thirty rounded-tFour"
               src={props.image as StaticImageData}
               alt="Phone layer"
               width={305}
