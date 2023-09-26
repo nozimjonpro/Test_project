@@ -12,7 +12,7 @@ export default function Home() {
       <Header />
       <Hero />
       {sectionsData.map((el, i) => (
-        <Universal key={i} {...el} />
+        <Universal mainClass="page__sections" key={i} {...el} />
       ))}
       <Mobil />
       <Problem />

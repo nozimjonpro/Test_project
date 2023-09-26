@@ -22,6 +22,7 @@ type UniversalProps = {
   sectionBg: React.CSSProperties;
   styles?: Styles;
   nav: SimpleData[] | null;
+mainClass?: string
 };
 
 type ImageType = {

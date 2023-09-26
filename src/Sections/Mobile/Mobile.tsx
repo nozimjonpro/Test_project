@@ -8,10 +8,7 @@ import { fadeFromBottom } from "@/Utils/motion";
 
 export const Mobil = () => {
   return (
-    <section
-      className="relative w-full flex justify-center items-center"
-      id="mobile"
-    >
+    <section className="page__sections relative w-full flex justify-center items-center">
       <video
         className="-z-20 w-full object-cover"
         muted

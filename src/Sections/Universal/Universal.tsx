@@ -10,7 +10,7 @@ import { SocialMedia } from "@/Components/SocialMedia/SocialMedia";
 export const Universal = (props: UniversalProps) => {
   return (
     <section
-      className="page__section relative lg+:py-40 md:py-32 pb-32 sm:pt-24 xs:pt-16 py-12"
+      className={`${props.mainClass} relative lg+:py-40 md:py-32 pb-32 sm:pt-24 xs:pt-16 py-12`}
       style={props.sectionBg}
       id={props.type}
     >

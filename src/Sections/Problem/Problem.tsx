@@ -25,7 +25,7 @@ const item = {
 
 export const Problem = () => {
   return (
-    <section className="bg-blueBg md:pt-20 pt-16" id="problem">
+    <section className="page__sections bg-blueBg md:pt-20 pt-16">
       <motion.div
         className="max-w-screen-lg+ w-full mx-auto md:px-4 px-2 flex flex-col items-center"
         variants={fadeFromBottomGroup(0.5, 100)}
@@ -58,6 +58,7 @@ export const Problem = () => {
           variants={container}
           initial="hidden"
           whileInView="show"
+          viewport={{ once: true }}
         >
           {images.map((el) => (
             <motion.li

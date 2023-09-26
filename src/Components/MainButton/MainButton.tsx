@@ -17,7 +17,6 @@ export const MainButton = (props: MainButtonProps) => {
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
         href={props.tel ? `tel:${props.tel}` : props.href}
-        target={props.tel ? "" : "_blank"}
       >
         {props.title}
       </a>

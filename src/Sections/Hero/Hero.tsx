@@ -9,7 +9,7 @@ import { fadeFromBottom } from "@/Utils/motion";
 
 export const Hero = () => {
   return (
-    <section className="hero md:pt-40 pt-32 pb-40" id="hero">
+    <section className="page__sections hero md:pt-40 pt-32 pb-40">
       <div className="max-w-screen-lg+ w-full mx-auto md:px-4 px-2">
         <motion.div
           className="flex flex-col items-center gap-y-4 font-medium sm:mb-6 mb-4"
@@ -72,6 +72,7 @@ export const Hero = () => {
             width={305}
             height={659}
             draggable={false}
+            quality={100}
           />
         </motion.div>
       </div>

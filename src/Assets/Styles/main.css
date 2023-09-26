@@ -31,6 +31,19 @@ section {
   overflow: hidden;
 }
 
+.nav__link--active {
+  background-color: #00aeda;
+  color: #fff;
+}
+
+.nav__link:hover {
+  background-color: #f1f1f3;
+}
+
+.nav__link--active:hover {
+  background-color: #00aeda;
+}
+
 .content__circle {
   position: relative;
   max-width: 670px;

@@ -7,7 +7,7 @@ import { socialData } from "@/Assets/Data/MockData";
 
 export const Footer = () => {
   return (
-    <footer className="md:py-24 sm:py-16 py-12" id="contact">
+    <footer className="page__sections md:py-24 sm:py-16 py-12" id="contact">
       <div className="max-w-screen-lg+ w-full mx-auto md:px-4 px-2">
         <ul className="flex md:justify-between justify-center gap-y-4 md:gap-y-0 gap-x-3 md:flex-nowrap flex-wrap">
           {footerBtns.map((el) => {
