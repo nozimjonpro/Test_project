@@ -39,7 +39,8 @@ const config: Config = {
       borderRadius: {
         hundred: "100px",
         thirty: "30px",
-        tFour: '24px'
+        tFour: "24px",
+        fifteen: "15px",
       },
       borderColor: {
         silver: "#F1F1F3",

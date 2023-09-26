@@ -78,7 +78,7 @@ export const Problem = () => {
                   priority
                 />
                 <Image
-                  className="md:max-w-[305px] sm:max-w-[215px] max-w-[156px] w-full absolute top-[calc(3%)] sm:left-[calc(10%+3px)] left-[calc(10%+2px)] md:rounded-thirty rounded-tFour"
+                  className="md:max-w-[305px] sm:max-w-[215px] max-w-[156px] w-full absolute top-[calc(3%)] sm:left-[calc(10%+3px)] left-[calc(10%+2px)] md:rounded-thirty sm:rounded-tFour rounded-fifteen"
                   src={el.image as StaticImageData}
                   alt="Phone layer"
                   width={305}
