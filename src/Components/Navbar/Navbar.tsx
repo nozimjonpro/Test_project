@@ -7,7 +7,6 @@ export const Navbar = ({ isClicked, setIsClicked }: NavbarProps) => {
     const sections =
       document.querySelectorAll<HTMLTableSectionElement>(".page__sections");
     const anchor = document.querySelectorAll(".nav__link");
-    console.log(sections);
 
     const handleScroll = () => {
       const fromTop = window.scrollY;
