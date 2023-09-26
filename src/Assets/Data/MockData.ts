@@ -54,7 +54,7 @@ export const sectionsData: UniversalProps[] = [
     image: img.Medicine,
     icon: img.MedicineIcon,
     heading: "1SONiA Meditsina",
-    text: "Mobil ilova orqali shifokorlar va klinika qabuliga onlayn tarzda yozilishingiz mumkin. Meditsinada 2 ta bo’lim mavjud:",
+    text: "Tanangizdagi og’riqni qaysi shifokor davolay olishini bilmayabsizmi? Mobil ilova orqali uni bilishingiz mumkin. Shifokor va Klinika qabuliga onlayn tarzda yoziling",
     sectionBg: { backgroundColor: "#F1F1F3" },
     styles: {},
     nav: [
