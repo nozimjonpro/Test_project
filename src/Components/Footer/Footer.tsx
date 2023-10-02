@@ -4,8 +4,10 @@ import { footerBtns } from "@/Assets/Data/MockData";
 import * as img from "../../Assets/Images";
 import Image, { StaticImageData } from "next/image";
 import { socialData } from "@/Assets/Data/MockData";
+import { useTranslations } from "next-intl";
 
 export const Footer = () => {
+  const t = useTranslations("footer");
   return (
     <footer className="page__sections md:py-24 sm:py-16 py-12" id="contact">
       <div className="max-w-screen-lg+ w-full mx-auto md:px-4 px-2">
@@ -13,7 +15,10 @@ export const Footer = () => {
           {footerBtns.map((el) => {
             return (
               <li className="sm:max-w-[350px] max-w-xs w-full" key={el.id}>
-                <MainButton {...el} />
+                <MainButton
+                  {...el}
+                  title={el.id === 3 ? t("address") : el.title}
+                />
               </li>
             );
           })}
@@ -23,12 +28,10 @@ export const Footer = () => {
         </p>
         <div className="flex lg:flex-row flex-col-reverse items-center lg:justify-between gap-y-4 gap-x-6 lg:gap-0 lg+:flex-nowrap flex-wrap ">
           <a className="flex items-center gap-x-2 hover:underline" href="#">
-            <span>Bo’sh ish o’rinlari</span>
+            <span>{t("vacancy")}</span>
             <Image src={img.ArrowTopRight} alt="Just an icon" />
           </a>
-          <p className="text-lg text-ligtSilver">
-            Barcha huquqlar himoyalangan
-          </p>
+          <p className="text-lg text-ligtSilver aspect-auto">{t("privacy")}</p>
           <ul className="flex items-center gap-x-3">
             {socialData.map((el) => (
               <li

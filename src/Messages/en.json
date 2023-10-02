@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "restaurant": "Restaurant",
+    "famous": "Celebrities",
+    "medicine": "Medicine",
+    "auto": "Auto",
+    "contact": "Contacts"
+  },
+
+  "languages": {
+    "uz": "Uzbek",
+    "ru": "Russian",
+    "en": "English "
+  },
+
+  "hero": {
+    "heading": "1SONiA is a Restaurant, Celebrity Medical and Auto services",
+    "app": "Mobile App",
+    "text": "Online solution for your problems"
+  },
+
+  "restaurant": {
+    "heading": "1SONiA Restaurant",
+    "text": "Through the mobile app you can find out the addresses of restaurants, dishes, their prices and book a table in advance. There are 4 sections in the restaurant:",
+    "nav": {
+      "item1": "Restaurant",
+      "item2": "cafe",
+      "item3": "national dishes",
+      "item4": "wedding restaurants"
+    }
+  },
+
+  "famous": {
+    "heading": "1SONiA Celebrities",
+    "text": "Receive video greetings from celebrities and order wedding favors through the mobile app"
+  },
+
+  "medicine": {
+    "heading": "1SONiA Medicine",
+    "text": "You can make appointments with doctors and clinics through a mobile app. There are 2 sections in medicine:",
+    "nav": {
+      "item1": "doctors",
+      "item2": "clinics"
+    }
+  },
+
+  "auto": {
+    "heading": "1SONiA Auto",
+    "text": "Make reservations at car services and car masters through the mobile app. There are 2 sections in the Auto section:",
+    "nav": {
+      "item1": "mechanics",
+      "item2": "car services"
+    }
+  },
+
+  "video": {
+    "text": "Video presentationof the mobile application"
+  },
+
+  "problem": {
+    "text": "A remote solutionto your problems",
+    "heading": "1SONiA",
+    "text2": "4 sections in 1 app. Download the app from Google Play and Apple Store"
+  },
+
+  "footer": {
+    "address": "Tashkent, Chilanzar district, Malaya Koltsevaya street, 16 ",
+    "vacancy": "Vacancies",
+    "privacy": "All rights reserved"
+  }
+}

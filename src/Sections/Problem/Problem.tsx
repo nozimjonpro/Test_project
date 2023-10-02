@@ -7,6 +7,7 @@ import { fadeFromBottomGroup } from "@/Utils/motion";
 import { images } from "@/Assets/Data/MockData";
 import { PhoneLayer } from "@/Assets/Images";
 import Image, { StaticImageData } from "next/image";
+import { useTranslations } from "next-intl";
 
 const container = {
   hidden: { opacity: 0 },
@@ -24,6 +25,7 @@ const item = {
 };
 
 export const Problem = () => {
+  const t = useTranslations("problem");
   return (
     <section className="page__sections bg-blueBg md:pt-20 pt-16">
       <motion.div
@@ -37,7 +39,7 @@ export const Problem = () => {
           className="text-white lg:text-6xl md:text-5xl sm:text-4xl xs:text-3xl text-2xl max-w-xs sm:max-w-xl md:max-w-2xl xs:max-w-sm tracking-wide font-bold text-center"
           variants={fadeFromBottomGroup(0.5, 100, true)}
         >
-          Muammolaringizning masofadan yechimi
+          {t("text")}
         </motion.p>
         <motion.h2
           className="text-sonia lg:text-[250px] md+:text-[200px] my-5 md:text-[180px] sm:text-[150px] xs:text-9xl text-7xl xs:my-8 md:my-10 font-bold leading"
@@ -49,8 +51,7 @@ export const Problem = () => {
           className="balance__text sm:text-2xl text-xl text-white md:mb-8 mb-6 max-w-lg text-center"
           variants={fadeFromBottomGroup(0.5, 100, true)}
         >
-          4 ta bo’lim 1 ta ilova ichida. Ilovani Google Play va Apple Store da
-          yuklab oling
+          {t("text2")}
         </motion.p>
         <SocialMedia />
         <motion.ul

@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import { navbarData } from "@/Assets/Data/MockData";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export const Navbar = ({ isClicked, setIsClicked }: NavbarProps) => {
+  const t = useTranslations("nav");
   useEffect(() => {
     const sections =
       document.querySelectorAll<HTMLTableSectionElement>(".page__sections");
@@ -53,7 +55,7 @@ export const Navbar = ({ isClicked, setIsClicked }: NavbarProps) => {
               id={el.path}
               onClick={() => setIsClicked(false)}
             >
-              {el.title}
+              {t(el.lang)}
             </Link>
           </li>
         ))}

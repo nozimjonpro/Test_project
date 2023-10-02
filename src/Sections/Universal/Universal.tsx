@@ -6,8 +6,11 @@ import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 import { fadeFromBottom } from "@/Utils/motion";
 import { SocialMedia } from "@/Components/SocialMedia/SocialMedia";
+import { useTranslations } from "next-intl";
 
 export const Universal = (props: UniversalProps) => {
+  const t = useTranslations();
+
   return (
     <section
       className={`${props.mainClass} relative lg+:py-40 md:py-32 pb-32 sm:pt-24 xs:pt-16 py-12`}
@@ -92,7 +95,7 @@ export const Universal = (props: UniversalProps) => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            {props.heading}
+            {t(`${props.type}.heading`)}
           </motion.h2>
           <motion.p
             className="sm:text-xl lg+:text-2xl xs:text-lg  text-base"
@@ -101,7 +104,7 @@ export const Universal = (props: UniversalProps) => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            {props.text}
+            {t(`${props.type}.text`)}
           </motion.p>
           <motion.ul
             className="lg:grid lg:grid-cols-2 max-w-max lg:gap-2 xs:mb-4 mb-0 gap-y-2 xs:gap-y-0 justify-center flex gap-x-2 xs:flex-nowrap flex-wrap"
@@ -114,13 +117,14 @@ export const Universal = (props: UniversalProps) => {
             {props.nav
               ? props.nav.map((el) => (
                   <motion.li
-                    className="border-2 cursor-pointer border-bgBrend lg:p-4 sm:p-2.5 p-2 text-bgBrend w-max xs:text-base text-sm sm:text-lg font-medium rounded-hundred uppercase"
+                    className="border-2 cursor-pointer border-bgBrend lg:p-4 sm:p-2.5 p-2 text-bgBrend max-w-max xs:text-base text-sm sm:text-lg font-medium rounded-hundred uppercase truncate"
                     key={el.id}
                     initial={{ y: 50 }}
                     whileInView={{ y: 0 }}
                     viewport={{ once: true }}
+                    title={t(`${props.type}.nav.${el.title}`)}
                   >
-                    {el.title}
+                    {t(`${props.type}.nav.${el.title}`)}
                   </motion.li>
                 ))
               : ""}

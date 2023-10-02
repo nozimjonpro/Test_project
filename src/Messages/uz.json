@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "restaurant": "Restoran",
+    "famous": "Mashhurlar",
+    "medicine": "Meditsina",
+    "auto": "Avto",
+    "contact": "Aloqa"
+  },
+
+  "languages": {
+    "uz": "O'zbekcha",
+    "ru": "Ruscha",
+    "en": "Inglizcha"
+  },
+
+  "hero": {
+    "heading": "1SONiA bu Restoran, Mashhurlar Meditsina va Avto xizmatlari",
+    "app": "Mobil Ilova",
+    "text": "Muammolaringizning masofadan yechimi"
+  },
+
+  "restaurant": {
+    "heading": "1SONiA Restoran",
+    "text": "Mobil ilova orqali ovqatlanish joylarining manzili, taomlar, ularning narxlarini bilishingiz va oldindan joy band qilishingiz mumkin. Restoranda 4 ta bo’lim mavjud:",
+    "nav": {
+      "item1": "Restoran",
+      "item2": "Cafe",
+      "item3": "Milliy taom",
+      "item4": "To'yxona"
+    }
+  },
+
+  "famous": {
+    "heading": "1SONiA Mashhurlar",
+    "text": "Mobil ilova orqali mashhurlardan video tabrik oling va to’y xizmati uchun buyurtma bering"
+  },
+
+  "medicine": {
+    "heading": "1SONiA Meditsina",
+    "text": "Mobil ilova orqali shifokorlar va klinika qabuliga onlayn tarzda yozilishingiz mumkin. Meditsinada 2 ta bo’lim mavjud:",
+    "nav": {
+      "item1": "shifokorlar",
+      "item2": "klinikalar"
+    }
+  },
+
+  "auto": {
+    "heading": "1SONiA Avto",
+    "text": "Mobil ilova orqali avtoservis va mashina ustalari qabuliga joy band qiling. Avto bo’limida 2 ta bo’lim mavjud:",
+    "nav": {
+      "item1": "ustalar",
+      "item2": "avtoservislar"
+    }
+  },
+
+  "video": {
+    "text": "Mobil ilovaning video taqdimoti"
+  },
+
+  "problem": {
+    "text": "Muammolaringizning masofadan yechimi",
+    "heading": "1SONiA",
+    "text2": "4 ta bo’lim 1 ta ilova ichida. Ilovani  Google Play va Apple Store da yuklab oling"
+  },
+
+  "footer": {
+    "address": "Toshkent, Chilonzor tumani, kichik xalqa ko’chasi, 16",
+    "vacancy": "Bo'sh ish o'rinlari",
+    "privacy": "Barcha huquqlar himoyalangan"
+  }
+}

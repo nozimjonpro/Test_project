@@ -6,8 +6,10 @@ import Image from "next/image";
 import { SocialMedia } from "@/Components/SocialMedia/SocialMedia";
 import { motion } from "framer-motion";
 import { fadeFromBottom } from "@/Utils/motion";
+import { useTranslations } from "next-intl";
 
 export const Hero = () => {
+  const t = useTranslations("hero");
   return (
     <section className="page__sections hero md:pt-40 pt-32 pb-40">
       <div className="max-w-screen-lg+ w-full mx-auto md:px-4 px-2">
@@ -28,7 +30,7 @@ export const Hero = () => {
               priority
             />
           </div>
-          <span>Mobil llova</span>
+          <span>{t("app")}</span>
         </motion.div>
         <div className="flex flex-col md:gap-y-5 sm:gap-y-4 gap-y-2.5 items-center text-center">
           <motion.h1
@@ -37,7 +39,7 @@ export const Hero = () => {
             initial="hidden"
             animate="visible"
           >
-            1SONiA bu Restoran, Mashhurlar Meditsina va avto xizmatlari
+            {t("heading")}
           </motion.h1>
           <motion.p
             className="lg:text-3xl sm:text-2xl xs:text-lg text-base"
@@ -45,7 +47,7 @@ export const Hero = () => {
             initial="hidden"
             animate="visible"
           >
-            Muammolaringizning masofadan yechimi
+            {t("text")}
           </motion.p>
           <SocialMedia></SocialMedia>
         </div>

@@ -5,8 +5,10 @@ import { PlayButton } from "@/Assets/Images";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeFromBottom } from "@/Utils/motion";
+import { useTranslations } from "next-intl";
 
 export const Mobil = () => {
+  const t = useTranslations("video");
   return (
     <section className="page__sections relative w-full flex justify-center items-center">
       <video
@@ -46,7 +48,7 @@ export const Mobil = () => {
           />
         </motion.a>
         <p className="text-white md:text-5xl sm:text-4xl xs:text-2xl text-xl md:tracking-wider max-w-md w-full  text-center">
-          Mobil ilovaning video taqdimoti
+          {t("text")}
         </p>
       </motion.div>
     </section>

@@ -6,11 +6,17 @@ import { Language, ArrowDown } from "@/Assets/Images";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { Accept } from "@/Assets/Images";
+import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function SelectLang() {
   const [isClicked, setIsClicked] = useState(false);
 
-  const [lang, setLang] = useState(langData[0]);
+  const locale = useLocale();
+
+  const [lang, setLang] = useState(langData.find((el) => el.lang === locale));
+
+  const t = useTranslations("languages");
 
   return (
     <div className="relative z-20">
@@ -28,7 +34,7 @@ export default function SelectLang() {
           height={20}
           draggable={false}
         />
-        <span className="md:block hidden text-lg">{lang.title}</span>
+        <span className="md:block hidden text-lg">{t(lang?.lang)}</span>
         <Image
           className={`md:block hidden ${
             isClicked ? "rotate-180" : "rotate-0"
@@ -55,30 +61,32 @@ export default function SelectLang() {
             }}
           >
             {langData.map((el) => (
-              <li
-                className="flex items-center gap-x-3 px-3 py-2.5 rounded-xl md:hover:bg-white hover:bg-bgSilver cursor-pointer transition-colors duration-300"
-                key={el.id}
-                onClick={() => {
-                  setLang(el);
-                  setIsClicked(false);
-                }}
-              >
-                <Image
-                  src={el.svg}
-                  alt="flag icon for language"
-                  width={24}
-                  height={24}
-                />{" "}
-                <span>{el.title}</span>
-                {el.id === lang.id && (
+              <li className="" key={el.id}>
+                <Link
+                  className="flex items-center gap-x-3 px-3 py-2.5 rounded-xl md:hover:bg-white hover:bg-bgSilver cursor-pointer transition-colors duration-300"
+                  href={el.lang}
+                  onClick={() => {
+                    setLang(el);
+                    setIsClicked(false);
+                  }}
+                >
                   <Image
-                    className="ml-auto"
-                    src={Accept}
-                    alt="Just an icon"
-                    width={14}
-                    height={9.5}
-                  />
-                )}
+                    src={el.svg}
+                    alt="flag icon for language"
+                    width={24}
+                    height={24}
+                  />{" "}
+                  <span>{t(el.lang)}</span>
+                  {locale === el.lang && (
+                    <Image
+                      className="ml-auto"
+                      src={Accept}
+                      alt="Just an icon"
+                      width={14}
+                      height={9.5}
+                    />
+                  )}
+                </Link>
               </li>
             ))}
           </motion.ul>

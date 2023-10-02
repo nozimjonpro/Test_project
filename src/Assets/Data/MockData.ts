@@ -1,11 +1,11 @@
 import * as img from "../Images";
 
 export const navbarData = [
-  { id: 1, title: "Restoran", path: "#restaurant" },
-  { id: 2, title: "Mashhurlar", path: "#famous" },
-  { id: 3, title: "Meditsina", path: "#medicine" },
-  // { id: 4, title: "Avto", path: "#auto" },
-  { id: 5, title: "Aloqa", path: "#contact" },
+  { id: 1, title: "Restoran", path: "#restaurant", lang: "restaurant" },
+  { id: 2, title: "Mashhurlar", path: "#famous", lang: "famous" },
+  { id: 3, title: "Meditsina", path: "#medicine", lang: "medicine" },
+  // { id: 4, title: "Avto", path: "#auto", lang: "auto" },
+  { id: 5, title: "Aloqa", path: "#contact", lang: "contact" },
 ];
 
 export const langData = [
@@ -25,10 +25,10 @@ export const sectionsData: UniversalProps[] = [
     sectionBg: { backgroundColor: "#F1F1F3" },
     styles: {},
     nav: [
-      { id: 1, title: "restaurant" },
-      { id: 2, title: "kafe" },
-      { id: 3, title: "milliy taom" },
-      { id: 4, title: "to'yxona" },
+      { id: 1, title: "item1" },
+      { id: 2, title: "item2" },
+      { id: 3, title: "item3" },
+      { id: 4, title: "item4" },
     ],
   },
 
@@ -58,8 +58,8 @@ export const sectionsData: UniversalProps[] = [
     sectionBg: { backgroundColor: "#F1F1F3" },
     styles: {},
     nav: [
-      { id: 1, title: "shifokorlar" },
-      { id: 2, title: "klinikalar" },
+      { id: 1, title: "item1" },
+      { id: 2, title: "item2" },
     ],
   },
 
@@ -77,8 +77,8 @@ export const sectionsData: UniversalProps[] = [
   //     },
   //   },
   //   nav: [
-  //     { id: 1, title: "ustalar" },
-  //     { id: 2, title: "avtoservislar" },
+  //     { id: 1, title: "item1" },
+  //     { id: 2, title: "item2" },
   //   ],
   // },
 ];
