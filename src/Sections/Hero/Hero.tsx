@@ -34,7 +34,7 @@ export const Hero = () => {
         </motion.div>
         <div className="flex flex-col md:gap-y-5 sm:gap-y-4 gap-y-2.5 items-center text-center">
           <motion.h1
-            className="hero__heading font-bold text-3xl sm:text-4xl lg:text-6xl"
+            className="hero__heading font-bold text-3xl sm:text-4xl lg:text-6xl m-0"
             variants={fadeFromBottom(0.3, 0.5, 50)}
             initial="hidden"
             animate="visible"
