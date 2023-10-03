@@ -137,7 +137,7 @@ export const footerBtns: MainButtonProps[] = [
     id: 2,
     title: "info@1sonia.uz",
     variant: "black",
-    href: "#",
+    href: "mailto:1soniauz@gmail.com",
     styleClass:
       "lg+:text-3xl lg:text-2xl md:text-xl sm:text-xl xs:text-lg py-4 sm:p-4",
   },
@@ -145,7 +145,7 @@ export const footerBtns: MainButtonProps[] = [
     id: 3,
     title: "Toshkent, Chilonzor tumani, kichik xalqa ko’chasi, 16",
     variant: "black",
-    href: "#",
+    href: "https://maps.app.goo.gl/kDTyYyzVpBbjbzwQ9",
     styleClass:
       "balance__text lg:text-xl md+:text-lg md:text-sm sm:text-lg px-1 py-1",
   },
