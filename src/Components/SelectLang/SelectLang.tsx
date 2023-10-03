@@ -64,7 +64,7 @@ export default function SelectLang() {
               <li className="" key={el.id}>
                 <Link
                   className="flex items-center gap-x-3 px-3 py-2.5 rounded-xl md:hover:bg-white hover:bg-bgSilver cursor-pointer transition-colors duration-300"
-                  href={el.lang}
+                  href={"/" + el.lang}
                   onClick={() => {
                     setLang(el);
                     setIsClicked(false);
