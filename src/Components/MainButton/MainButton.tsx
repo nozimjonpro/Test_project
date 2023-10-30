@@ -16,7 +16,7 @@ export const MainButton = (props: MainButtonProps) => {
         } ${isHover ? `main__btn--${props.variant} text-white` : ""}`}
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
-        href={props.tel ? `tel:${props.tel}` : props.href}
+        href={props.tel ? `tel:${props.href}` : props.href}
       >
         {props.title}
       </a>
